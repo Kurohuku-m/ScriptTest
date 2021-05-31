@@ -28,21 +28,20 @@ public class Boss
 public class Test2 : MonoBehaviour
 {
 
-    void Start2()
+    void Start()
     {
-        //10回処理を繰り返す
-        for (int consumption = 0; consumption < 10; consumption++)
-        {
-            // Bossクラスの変数を宣言してインスタンスを代入
+         // Bossクラスの変数を宣言してインスタンスを代入
             Boss lastboss = new Boss();
 
-            // Magic関数を呼び出す
-            lastboss.Magic(5);
-        }
+        //11回処理を繰り返す
+        for (int consumption = 0; consumption < 11; consumption++)
+            {   // Magic関数を呼び出す
+                lastboss.Magic(5);
+            }
     }
 
     // Update is called once per frame
-    void Update2()
+    void Update()
     {
 
 
